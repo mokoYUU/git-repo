@@ -7,11 +7,27 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main id="app">
-<h1>Git計算機演習1
-</h1>
-<p>各グループの機能を統
-合して完成させます。</p>
+<main class="calculator-container">
+<h1>シンプル計算機</h1>
+<div class="input-area">
+<label for="number1">1つ⽬の数値</label>
+<input id="number1" type="number">
+<label for="number2">2つ⽬の数値</label>
+<input id="number2" type="number">
+</div>
+<div class="button-area">
+<button id="btn-add">＋</button>
+<button id="btn-subtract">－</button>
+<button id="btn-multiply">×</button>
+<button id="btn-divide">÷</button>
+<button id="btn-clear">クリア</button>
+</div>
+<p id="message"></p>
+<p id="result">結果：未計算</p>
+<section class="history-area">
+<h2>計算履歴</h2>
+<ul id="history-list"></ul>
+</section>
 </main>
 <script src="js/add-subtract.js"></script>
 <script src="js/multiply-divide.js"></script>
